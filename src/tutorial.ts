@@ -19,3 +19,54 @@ age = age + 5;
 let isAdult: boolean = age >= 18;
 isAdult = !isAdult;
 
+// union type
+let tax: number | string = 10;
+tax = 100;
+tax = '$10'
+console.log(tax)
+
+let requestStatus: 'pending' | 'success' | 'error' = 'pending';
+requestStatus = 'success';
+requestStatus = 'error';
+console.log(requestStatus)
+
+// any
+let notSure: any = 4;
+notSure = 'maybe a string';
+notSure = false;
+
+const books = ['1987','Bravee New World', 'Farenheit 451'];
+
+let foundBook: string | undefined;
+
+for (let book of books) {
+    if (book === '1987') {
+        foundBook = book;
+        foundBook = foundBook.toUpperCase();
+        break;
+    }
+}
+console.log(foundBook?.length)
+
+// Create a variable orderStatus of type 'processing' | 'shipped' | 'delivered' and assign it the value 'processing'. Then, try to assign it the values 'shipped' and 'delivered'.
+let orderStatus: 'processing' | 'shipped' | 'delivered' = 'processing';
+orderStatus = 'shipped';
+orderStatus = "delivered";
+console.log(orderStatus)
+// Create a variable discount of type number | string and assign it the value 20. Then, try to assign it the value '20%'.
+let discount: number | string = 20;
+discount = '20%'
+console.log(discount)
+
+// Arrays 
+let temperatures: number[] = [20,42,42];
+temperatures.push('hot');
+console.log(temperatures)
+
+let colors: string[] = ['red','blue','greeen']
+colors.push(true);
+console.log(colors)
+
+let mixedArray: (number | string)[] = [1 ,"two", 2]
+mixedArray.push(true);
+console.log(mixedArray)
