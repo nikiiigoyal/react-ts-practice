@@ -10,6 +10,7 @@ amount = 12 - 1;
 let isAwesome: boolean = true;
 isAwesome = false;
 
+
 let greeting: string = 'Hello Typescript';
 greeting = greeting.toUpperCase();
 
@@ -70,3 +71,10 @@ console.log(colors)
 let mixedArray: (number | string)[] = [1 ,"two", 2]
 mixedArray.push(true);
 console.log(mixedArray)
+
+// objects
+let bike: {brand: string, year: number} = {brand: 'ford', year: 2025};
+bike.year = 'old';
+console.log(bike);
+
+let laptop: {brand: String; year: number} = {brand: 'Dell', year: 2015}
