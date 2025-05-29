@@ -54,7 +54,7 @@ let orderStatus: 'processing' | 'shipped' | 'delivered' = 'processing';
 orderStatus = 'shipped';
 orderStatus = "delivered";
 console.log(orderStatus)
-// Create a variable discount of type number | string and assign it the value 20. Then, try to assign it the value '20%'.
+// Create a variable discount of type number | string and assign it the value 20. Then, 
 let discount: number | string = 20;
 discount = '20%'
 console.log(discount)
