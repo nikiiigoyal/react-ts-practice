@@ -78,3 +78,8 @@ bike.year = 'old';
 console.log(bike);
 
 let laptop: {brand: String; year: number} = {brand: 'Dell', year: 2015}
+
+let product1 = {title: 'shirt', price: 20 };
+let product2 = { title: 'pants'}
+let products : {title: string, p1rice?: number}[]= [product1, product2]
+products.push({title: 'shoes', price: 'expensive' });
